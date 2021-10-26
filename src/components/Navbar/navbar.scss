@@ -1,0 +1,81 @@
+@import '../../App.scss';
+#navbar{
+    .navbarWrapper{
+        padding:2rem 0;
+        display:grid;
+        grid-template-columns: auto auto;
+        @include desktop{
+            grid-template-columns:33.33% 33.33% 33.33%;
+        }
+        .logo{
+            font-family: $fontFamily1;
+            font-size:$size3;
+        }
+        .listLinks{
+            position:absolute;
+            top:0;
+            left:0;
+            width:100vw;
+            height:100vh;
+            background:#000;
+            clip-path: circle(50% at 30% 5%);
+            display:none;
+            z-index:999;
+            @include desktop{
+                display:block;
+                background:none;
+                clip-path: none;
+                position:static;
+                width:auto;
+                height:auto;
+            }
+            ul{
+                position:absolute;
+                top:50%;
+                left:50%;
+                transform: translate(-50%, -50%);
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap:3rem;
+                @include desktop{
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100%;
+                    position:static;
+                    transform: translate(0, 0);
+                }
+                li a{
+                    @include linkMenu;
+                }
+            }
+            .closeIcon{
+                color:#fff;
+                width:2.5rem;
+                height:2.5rem;
+                font-size: 2.5rem;
+                position:absolute;
+                right:2%;
+                top:2%;
+                cursor:pointer;
+                @include desktop{
+                    display:none;
+                }
+            }
+        }
+        .menuIcon{
+            text-align: end;
+            cursor: pointer;
+            font-size: 2rem;
+            display: grid;
+            align-items: center;
+            @include desktop{
+                display:none;
+            }
+        }
+    }
+    @include desktop{
+        
+    }
+}

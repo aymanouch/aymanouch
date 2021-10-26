@@ -1,0 +1,44 @@
+@import '../../App.scss';
+#contact{
+    .contactWrapper{
+        h3{
+           @include lightTitle; 
+        }
+        h1{
+            @include normalTitle;
+            font-size:$size3;
+        }
+        .globalMessage{
+            color:$mainColor;
+            padding:4rem 0;
+            font-size:$size2 + 1;
+            line-height: 4rem;
+            word-spacing: .5rem;
+            input, select{
+                font-size:$size2 + 1;
+                max-width: 100%;
+                background:none;
+                outline:none;
+                border:none;
+                border-bottom:1px solid;
+            }
+        }
+        button{
+            border:none;
+            border-left:2px solid;
+            border-top:2px solid;
+            border-bottom:2px solid;
+            border-radius:70%;
+            padding:1rem 2rem;
+            transition:all .3s linear;
+            font-size:$size2;
+            cursor:pointer;
+            &:hover{
+                border-right:2px solid;
+                background:$mainColor;
+                color:$bgColor;
+            }
+
+        }
+    }
+}

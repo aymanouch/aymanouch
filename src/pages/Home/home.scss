@@ -1,0 +1,78 @@
+@import "../../App.scss";
+
+#home{
+    padding-bottom:7rem;
+    .homeWrapper{
+         @include desktop{
+            display:grid;
+            grid-template-columns: 33.33% 33.33% 33.33%;
+         }
+        .itemGrid{
+            text-align: center;
+            .letterTitle{
+                    background-clip: text;
+                    color:transparent;
+                    background-size:cover;
+                h1{
+                    font-family:$fontFamily1;
+                    font-size:16rem;
+                    @include desktop{
+                        font-size:20rem;
+                    }
+                }   
+            }
+            .normalTitle{
+                @include normalTitle;
+            }
+            p{
+                @include paragraph;
+            }
+
+
+
+            &:first-child {
+                .letterTitle{
+                    background-image:url("../../images/img1.jpg");
+                }
+            }
+            &:nth-child(2) {
+                .letterTitle{
+                    background-image:url("../../images/img2.jpg");
+                }
+                @include desktop{
+                    position:relative;
+                &::after{
+                    position:absolute;
+                    content:"";
+                    width:1px;
+                    height:100vh;
+                    right:0;
+                    top:-129px;
+                    background:#d1d1d1;
+                }
+                &::before{
+                    position:absolute;
+                    content:"";
+                    width:1px;
+                    height:100vh;
+                    left:0;
+                    top:-129px;
+                    background:#d1d1d1;
+                }
+                }
+            }
+            &:last-child{
+                .letterTitle{
+                    background-image:url("../../images/img3.jpg");
+                }
+            }
+
+            @include desktop{
+                padding-top:5rem;
+            }
+        }
+    }
+    @include desktop{
+        padding-bottom:0;
+    }
+}

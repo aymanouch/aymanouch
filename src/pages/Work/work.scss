@@ -1,0 +1,32 @@
+@import "../../App.scss";
+#work{
+    .workWrapper{
+        .workItem{
+            text-align: center;
+           .imgContainer{
+               img{
+                   max-width:100%;
+                   @include desktop{
+                       max-width:80%;
+                   }
+               }
+           }
+           .normalTitle{
+              h1{
+                @include normalTitle;
+              }
+           }
+           p{
+               @include paragraph;
+               margin:1.5rem 0;
+           }
+        }
+
+        @include desktop{
+            display:grid;
+            grid-template-columns: auto auto auto;
+            gap:3rem;
+            padding-top:6rem;
+        }
+    }
+}

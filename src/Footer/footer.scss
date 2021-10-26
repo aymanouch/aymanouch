@@ -1,0 +1,36 @@
+@import "../App.scss";
+#footer{
+    padding-top:3rem;
+    padding-bottom:3rem;
+    .footerWrapper{
+        display:flex;
+        flex-direction: column;
+        gap:2rem;
+        align-items: center;
+        @include desktop{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .emailContact{
+            text-transform: uppercase;
+
+        }
+        .socialContact{
+            ul{
+                list-style:none;
+                display:flex;
+                gap:1rem;
+                li{
+                    @include circleIcon;
+                }
+            }
+        }
+    }
+
+    @include desktop{
+        position: absolute;
+        width:100%;
+        bottom:0%;   
+    }
+    
+}
