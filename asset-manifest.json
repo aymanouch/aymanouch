@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/lastPort/static/css/main.26b0ec14.chunk.css",
+    "main.js": "/lastPort/static/js/main.6fb1dbdb.chunk.js",
+    "main.js.map": "/lastPort/static/js/main.6fb1dbdb.chunk.js.map",
+    "runtime-main.js": "/lastPort/static/js/runtime-main.6df42bf7.js",
+    "runtime-main.js.map": "/lastPort/static/js/runtime-main.6df42bf7.js.map",
+    "static/js/2.fa54a7c8.chunk.js": "/lastPort/static/js/2.fa54a7c8.chunk.js",
+    "static/js/2.fa54a7c8.chunk.js.map": "/lastPort/static/js/2.fa54a7c8.chunk.js.map",
+    "index.html": "/lastPort/index.html",
+    "static/css/main.26b0ec14.chunk.css.map": "/lastPort/static/css/main.26b0ec14.chunk.css.map",
+    "static/js/2.fa54a7c8.chunk.js.LICENSE.txt": "/lastPort/static/js/2.fa54a7c8.chunk.js.LICENSE.txt",
+    "static/media/about.scss": "/lastPort/static/media/img2.ae7f8b16.jpg",
+    "static/media/home.scss": "/lastPort/static/media/img3.629b56cd.jpg",
+    "static/media/work1.c234cb55.png": "/lastPort/static/media/work1.c234cb55.png",
+    "static/media/work2.0de8ecd5.png": "/lastPort/static/media/work2.0de8ecd5.png",
+    "static/media/work3.fe9803c4.png": "/lastPort/static/media/work3.fe9803c4.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6df42bf7.js",
+    "static/js/2.fa54a7c8.chunk.js",
+    "static/css/main.26b0ec14.chunk.css",
+    "static/js/main.6fb1dbdb.chunk.js"
+  ]
+}
